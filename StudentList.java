@@ -6,11 +6,11 @@ public class StudentList {
 
 //		Check arguments
 		if(args[0].equals("a")) {
-			System.out.println("Loading data ...");			
+			System.out.println(Constants.LOAD);
 			try {
 			BufferedReader reader = new BufferedReader(
 					new InputStreamReader(
-							new FileInputStream("students.txt"))); 
+							new FileInputStream()));
 			String data = reader.readLine();
 			String students[] = data.split(",");
 			for(String student : students) {
